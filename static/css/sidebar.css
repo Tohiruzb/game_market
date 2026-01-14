@@ -1,0 +1,53 @@
+/* UMUMIY LAYOUT */
+.layout {
+  display: flex;
+  gap: 24px;
+  padding: 20px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #0b0f1a, #05070c);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  height: fit-content;
+}
+
+/* SIDEBAR TITLE */
+.sidebar-title {
+  color: #00eaff;
+  font-size: 18px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+/* MENU */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  border-radius: 10px;
+  color: #cfd8dc;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* HOVER */
+.sidebar-menu li:hover {
+  background: rgba(0, 234, 255, 0.15);
+  color: #00eaff;
+  transform: translateX(6px);
+}
+
+/* MAIN CONTENT */
+.content {
+  flex: 1;
+}

@@ -1,0 +1,11 @@
+
+<div class="image-container col-4 col-sm-3 col-md-2 col-lg-2">
+    {% if article.image %}
+
+        <a href="{% url 'article' article.pk %}?v=1"><img style="border-radius: 12px;" src="{{ article.image.url }}"
+                                                          alt="{{ article.title }}"></a>
+    {% else %}
+    <img src="{{ article.image.url }}" alt="rasm bosh">
+    {% endif %}
+    <div class="image-text">{{ article.title }}</div>
+</div>

@@ -1,0 +1,16 @@
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+    <div class="layout">
+  <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <a style="text-decoration:none;"  href="{% url 'index' %}"><h3 class="sidebar-title">All Categories</h3></a>
+    <ul class="sidebar-menu">
+        {% for category in categories %}
+        <a style="text-decoration:none;" href="{% url 'category' category.pk %}"><li>{{ category.title }}</li></a>
+        {% endfor %}
+    </ul>
+  </aside>
+    </div>
+</div>

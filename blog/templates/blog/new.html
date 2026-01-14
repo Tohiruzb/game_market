@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+{{ title }}
+{% endblock title %}
+{% block main %}
+<div  class="row g-2 game-grid">
+    {% for article in articles %}
+        <div class="col-6 col-md-4 col-lg-2 game-item">
+            {% include 'blog/components/_cards.html' %}
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
